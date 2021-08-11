@@ -1,0 +1,71 @@
+name: Neues Buch
+description: Neues Buch anlegen
+labels: ["Create Item"]
+body:
+  - type: input
+    attributes:
+      label: Titel
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Art des Inhalts
+      placeholder: Kurzgeschichten, Märchen, Roman, ...?
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Art des Mediums
+      placeholder: Gebunden, Taschenbuch, E-Book, Hörbuch-CD, ...?
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Author
+      options:
+        - Die Eine
+        - Der Andere
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: ID Typ
+      options:
+        - ASIN
+        - ISBM
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: ID
+    validations:
+      required: true
+  - type: input
+    attributes:
+      - label: Link zum Shop
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Preis
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Menge
+      description: Inklusive Seiten/Minuten/...
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Verlag
+      options:
+        - [Verlag Eins](https://eins)
+        - [Verlag Zwei](https://zwei)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Bescreibung
+    validations:
+      required: true
