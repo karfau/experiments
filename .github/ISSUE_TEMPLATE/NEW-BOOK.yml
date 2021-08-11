@@ -59,8 +59,8 @@ body:
     attributes:
       label: Verlag
       options:
-        - [Verlag Eins](https://eins)
-        - [Verlag Zwei](https://zwei)
+        - "[Verlag Eins](https://eins)"
+        - "[Verlag Zwei](https://zwei)"
     validations:
       required: true
   - type: textarea
